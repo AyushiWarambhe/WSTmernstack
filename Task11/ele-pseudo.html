@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            display: block;
+            justify-content: center;
+            align-items: center;
+        }
+        h1+p{
+            text-align: center;
+            margin: 30px;
+            padding: 20px;
+            border: 4px solid black;
+            outline: green solid 9px;
+        }
+        input::placeholder{
+            color: red;
+            opacity: 0.6;
+          
+        }
+        h2+p{
+            text-align: center;
+            margin: 30px;
+            padding:20px;
+            border: 1px solid black;
+            outline:pink solid 8px;
+            width: fit-content;
+        }
+        span{
+            padding: 30px;
+            margin: 30px;
+            font-weight: bold;
+        }
+        .class1{
+            width: fit-content;
+            height: fit-content;
+            border: 1px solid black;
+            outline: yellow double 8px ;
+            margin: 30px;
+            padding: 30px;
+        }
+        h3+p{
+            word-spacing: 6px;
+        }
+    </style>
+</head>
+<body>
+    <div class="class1">
+    <h1>outline property</h1>
+    <p> in border :- 10px solid black <br>
+        in outline: green solid 10px;</p>
+    </div>
+        <div class="class1">
+    <h2>placeholder (pseudo-element)</h2>
+    <p> it is use to style the placeholder text of < input >  <  textarea ></p>
+          <span>type here</span><input type="text" placeholder="type your first name here">
+        </div>
+        <div class="class1">
+    <h3>which css property overflow the line without breaking it</h3>
+    <p> <b>word-wrap:normal </b> <br> <i>this long word wrap will not break and wrap to the next line </i> <br>
+    <b>word-wrap :break-word </b><br> <i>the long word will break and wrap to the next line </i></p>
+        <br>
+    text-wrap:wrap/nowrap
+    <br>for breaking text
+</div>
+</body>
+</html>

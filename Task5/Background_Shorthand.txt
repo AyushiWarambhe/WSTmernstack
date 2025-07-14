@@ -1,0 +1,43 @@
+Here's a short note on the background shorthand property in CSS:
+
+🎯 CSS background Shorthand (Quick Note)
+The background shorthand property sets multiple background styles in one line.
+
+🔧 Syntax:
+css
+Copy
+Edit
+background: [color] [image] [position]/[size] [repeat] [attachment] [origin] [clip];
+🧱 Includes:
+background-color
+
+background-image
+
+background-position / background-size
+
+background-repeat
+
+background-attachment
+
+background-origin
+
+background-clip
+
+📝 Example:
+css
+Copy
+Edit
+background: #fff url("img.jpg") no-repeat center/cover fixed;
+This sets:
+
+White background color
+
+Background image img.jpg
+
+No repeat
+
+Positioned center
+
+Size: cover
+
+Attachment: fixed

@@ -1,0 +1,38 @@
+short note on the repeat timing function in CSS:
+
+⏱️ CSS repeat() Timing Function (Short Note)
+The repeat() timing function is used with CSS animations to create a repeating timing pattern.
+
+🔧 Syntax:
+css
+Copy
+Edit
+animation-timing-function: repeat(n, <easing-function>);
+⚠️ As of now, repeat() is not standard in CSS for timing functions.
+
+You might be referring to:
+
+✅ Commonly Used: animation-iteration-count
+To repeat an animation:
+
+css
+Copy
+Edit
+animation-iteration-count: infinite; /* or a number like 3 */
+✅ Related Timing Functions:
+These define the speed curve of an animation:
+
+css
+Copy
+Edit
+ease       /* default */
+linear     
+ease-in    
+ease-out   
+ease-in-out
+cubic-bezier(x1, y1, x2, y2)
+📝 Example:
+css
+Copy
+Edit
+animation: slide 2s ease-in-out infinite;

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            width: 100%;
+            height: 100vh;
+            background-color: rgb(231, 189, 164);
+            position:fixed;
+        }
+        .parent{
+            width: 1300px;
+            height: 700px;
+            border: 1px solid black;
+            margin: 2rem auto;
+            background-color: white;
+            border-radius: 3%
+          /*  display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;*/
+        }
+        .nav1{
+            width: 100%;
+            height: 50px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: rgb(251, 251, 251);
+            border-top-left-radius: 2rem ;
+             border-top-right-radius: 2rem ;
+        }
+        .mini-nav2{
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            color: rgb(99, 98, 98);
+        }
+        h4:hover{
+            color: black;
+        }
+        .mini-nav1{
+            width: 100%;
+            font-family: "Lavishly Yours", cursive;
+            font-size: 30px;
+           text-align: start;
+           padding: 20px;
+           font-weight:1px ;
+        }
+        .mainbody1{
+            width: 100%;
+            height: 92.7%;
+            background-color: rgb(226, 231, 234);
+            border-bottom-left-radius: 2rem;
+             border-bottom-left-radius: 2rem;
+        }
+        .box{
+            width: 100%;
+            height: 250px;
+            
+            text-align: center;
+            font-size: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .box p{
+            padding: 5rem ;
+        }
+        .box-1{
+            width: 100%;
+            height: fit-content;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            gap: 2rem;
+           
+        }
+       .b1 img{
+        width:200px ;
+        height: 290px;
+        margin: 2rem;
+       }
+       button{
+        background-color: black;
+        color: white;
+        width: 20%;
+        height: 35px;
+
+       }
+       @media screen and (max-width: 576px) {
+          .parent{
+            width: fit-content;
+            height: 100vh;
+             font-size: small;
+             background-color: aquamarine;
+             position: relative;
+          }
+          .mainbody1{
+            width: fit-content;
+            height: fit-content;
+           background-color: aquamarine;
+          
+          }
+          .box p{
+            font-size: 35px;
+          }
+          .box-1{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center ;
+            gap: 14rem;
+          }
+           .b1 img{
+             position: absolute;
+             top: 300px;
+            left: 30px;
+             
+           }
+           .b2{
+            width: 200px;
+            height: 120px;
+            z-index: 1;
+            
+           }
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="nav1">
+           <div class="mini-nav1"> <h3>Carine van Slageren</h3></div>
+           <div class="mini-nav2">
+            <h4>home</h4>
+            <h4>about</h4>
+            <h4>resume</h4>
+            <h4>contact</h4>
+           </div>
+        </div>
+        <div class="mainbody1">
+            <div class="box">
+                <p>A background in anthropology and photography helps me create clean, human centered designs.</p>
+            </div>
+            <div class="box-1">
+                <div class="bx b1">
+                    <img src="./beach.png" alt="" style="background-size:cover ;">
+                </div>
+                <div class="bx b2 ">
+                    
+                    <h1>My Story</h1>
+                    <br>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam nihil culpa mollitia ipsum veritatis eaque blanditiis impedit corrupti tempore, magnam inventore a id ullam natus, reiciendis ipsa vitae quae quo?
+                    te, temporibus voleupti, magnam qui eligendi, placeat ea ducimus asperiores nobis, laborum perspiciatis recusandae! Nam consequatur, officia voluptatem tempora velit dicta voluptas nisi sapiente saepe veritatis voluptatibus in, asperiores tenetur molestias?</p>
+                    <br>
+                    <p>Lorem ipsu, adipisicing elit. Earum officiis, ab obcaecati magni non ad possimus illo beatae laboriosam, dolores eligendi placeat recusandae quo corrupti odio nesciunt sit praesentium adipisci? Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur fugiat sit porro beatae velit eum ipsa numquam minima nihil hic expedita officiis magni, nobis aut quam quaerat at incidunt quo?
+                    Reiciandae fugit nedolores qui illum harum debitis eos architecto! Soluta quas harum eligendi debitis voluptatum distinctio ut accusamus ratione officia exercitationem ipsa neque, aut iure amet. Adipisci!
+                    Laborum consequatur rs ullam enim quae, dicta magni hic asperiores deserunt repellat numquam mollitia. Voluptates earum quo accusamus veritatis placeat consectetur dolorum unde, fugit iure neque, consequatur et cum quasi enim.</p>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, cumque? Quibusdam neque similique quasi, nemo placeat natus, aliquam sunt soluta, quod libero amet quas nobis vero nulla voluptatum iusto alias.
+                    Amet quam aperiam cumque dolore est accusamus ullam minus exercitationem? Laudantium veritatis similique cumque ex praesentium iusto atque eum impedit? Aliquid fuga qui accusamus eveniet ipsum est ea quod ab?</p>
+                    <br>
+                    <button>download resume
+                        <i style="color: aliceblue;" class="fa-solid fa-toggle-on"></i>
+                    </button>
+
+                
+
+                </div>
+            </div>
+           
+        <div class="foot1"></div>
+    </div>
+</body>
+</html>

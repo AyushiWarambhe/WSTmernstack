@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body{
+           
+            background-image: url("netflix.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: black;
+            
+            display: flex;
+            flex-direction: column;
+            gap: 10rem; 
+        }
+        .navbar{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+
+        }
+        h1{
+            font-size: 50px;
+        }
+        .b1{
+            color: red;
+            
+        }
+       select{
+        background-color: black;
+        color: white;
+        width: 70px;
+       }
+       .navbar>button{
+        background-color: red;
+        color: white;
+       }
+       .box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+       }
+       .box h1{
+        color:white;
+        font-size: 30px;
+        text-align: center;
+       }
+       .box p{
+        color: white;
+       }
+       input{
+        width: 150px;
+        height: 30px;
+        background-color: rgb(28, 27, 27);
+        color: gray;
+       }
+       .box>button{
+        background-color: red;
+        color: white;
+        width: 130px;
+        height: 50px;
+       }
+       @media screen and (max-width:576px) {
+        body{
+            margin: 2rem auto;
+            height: fit-content;
+            width: fit-content;
+            
+            text-align: center;
+        }
+        h1{
+            text-wrap: wrap
+            ;
+       }
+    }
+    </style>
+</head>
+<body>
+    
+    <div class="navbar">
+        <div class="b1">
+        <h1>NETFLIX</h1>
+        </div>
+        <div class="b2">
+            
+            <select name="language" id="">
+                
+                <option value="">English</option>
+                <option value="">hindi</option>
+                <option value="">marathi</option>
+                <option value="">tamil</option>
+                <option value="">urdu</option>
+                <option value="">french</option>
+                <option value="">konkani</option>
+                <option value="">bengali</option>
+                <option value="">nepali</option>
+                <option value="">punjabi</option>
+            </select>
+        
+        <button>Sign In</button>
+        </div>
+    </div>
+        <div class="box">
+            <h1>Unlimited movies, TV shows and more</h1>
+            <p>Starts at $149.Cancel at any time.</p>
+            <p>Ready to watch ? Enter your email to create or restart your membership.</p>
+            <input type="email" name="" id="" placeholder="Email address">
+           <button>Get Started
+            <i class="fa-solid fa-arrow-right"></i>
+           </button>
+        </div>
+
+</body>
+</html>

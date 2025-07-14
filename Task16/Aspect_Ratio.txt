@@ -1,0 +1,30 @@
+short note on aspect ratios in CSS:
+
+📐 CSS Aspect Ratio (Short Note)
+Aspect ratio controls the proportional relationship between an element’s width and height.
+
+🔧 Property:
+css
+Copy
+Edit
+aspect-ratio: width / height;
+🧱 Example:
+css
+Copy
+Edit
+aspect-ratio: 16 / 9;  /* width is 16, height is 9 */
+This keeps the element’s shape consistent, no matter the screen size.
+
+✅ Use Cases:
+Responsive videos, images, containers
+
+Prevent layout shifts
+
+📝 Example with other properties:
+css
+Copy
+Edit
+div {
+  width: 100%;
+  aspect-ratio: 1 / 1; /* Makes it a square */
+}

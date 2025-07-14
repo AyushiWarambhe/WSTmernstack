@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .body
+    {
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient( 75deg, green  , yellow);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .parent{
+        width: 600px;
+        height: 500px;
+        background-color: rgb(246, 197, 219);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .box1{
+        width: 200px;
+        height: 300px;
+        align-items: center;
+        justify-content: center;
+    }
+img{
+    border-radius: 100%;
+}
+.box2{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.b1{
+    width: 250px;
+    border: 1px dotted rgb(140, 80, 80);
+    border-radius: 5px;
+    background-color: rgb(168, 134, 200);
+}
+
+    </style>
+</head>
+<body>
+    <div class="body">
+        <div class="parent">
+           
+            <div class="box1">
+                <img src="./women.png" alt="">
+                <h1>Shivani patel</h1>
+                <h6>Designation</h6>
+                <p>this is a sample text,insert your desired text here.</p>
+            </div>
+            <div class="box2">
+                <div class="b1">01 
+                    <h2>Skill 1</h2>
+                </div>
+                <div class="b1">
+                    01
+                    <h2>Skill 2</h2>
+                </div>
+                <div class="b1">03
+                    <h2>Skill 3</h2>
+                </div>
+                <div class="b1">04
+                    <h2>Skill 4</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

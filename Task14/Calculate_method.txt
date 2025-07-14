@@ -1,0 +1,37 @@
+short note on the calc() method in CSS:
+
+🧮 CSS calc() Function (Short Note)
+The calc() function lets you perform mathematical calculations in CSS to set property values.
+
+🔧 Syntax:
+css
+Copy
+Edit
+property: calc(expression);
+✅ Supports:
++ (add)
+
+- (subtract)
+
+* (multiply)
+
+/ (divide)
+
+📌 Rules:
+Always add spaces around operators: +, -, *, /
+
+Can mix units: %, px, em, vh, etc.
+
+📝 Examples:
+css
+Copy
+Edit
+width: calc(100% - 50px);
+font-size: calc(1em + 2px);
+height: calc(100vh / 2);
+📌 Common Use:
+Responsive layouts
+
+Spacing adjustments
+
+Centering elements

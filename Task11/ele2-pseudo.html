@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .parent{
+            width: 500px;
+            height: 600px;
+            border: 1px solid black;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            margin: 50px;
+        }
+        .child{
+            width:240px ;
+            height: 290px;
+            outline: green solid 2px;
+            overflow: scroll;
+        }
+        h1{
+            background-color: black;
+            color: aqua;
+            width: fit content;
+            position: sticky;
+            top: 0;
+        }
+         h6{
+            background-color: black;
+            color: rgb(4, 255, 0);
+            width: fit-content;
+            position:sticky ;
+            top: 0;
+        }
+        .a1{
+            width:50px;
+            height: 50px;
+            border: 1px solid black;
+            text-wrap: nowrap;
+            padding: 1rem;
+            position: sticky;
+            top: 10px;
+        }
+        .a2{
+            width:60px;
+            height: 50px;
+            border: 1px solid black;
+            text-wrap: wrap;
+            padding: 1rem;
+            position: sticky;
+            top: 10px;
+        }
+        .a3{
+              width:50px;
+            height: 50px;
+            border: 1px solid black;
+            text-wrap: nowrap;
+            padding: 1rem;
+            position:sticky ;
+            top: 10px;
+        }
+    .a4
+    {
+         width:60px;
+            height: 50px;
+            border: 1px solid black;
+            text-wrap: wrap;
+            padding: 1rem;
+            position: sticky;
+            top: 10px;
+    }
+    body>h1{
+        background-color: blueviolet;
+        color: aliceblue;
+        text-decoration: double;
+        font-size: 60px;
+    }
+    </style>
+</head>
+<body>
+    <h1> About:-text-wrap</h1>
+    <div class="parent">
+        <div class="child">
+            <h1>heading no 1</h1>
+            <div class="a1">1st div (text-wrap;nowrap)</div> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut ex ipsa in quas earum voluptates voluptate, alias laborum totam exercitationem maxime tempore labore laudantium quo quaerat repudiandae doloremque officiis velit.
+        Sunt praesentium numquam ipsam? Itaque alias tempora cumque nulla corporis, iste maxime. Debitis ipsum sed voluptatum laboriosam aut ducimus assumenda quasi. Voluptatem quisquam temporibus quidem impedit rerum voluptas, in eius.
+        Quis autem tempore doloribus maxime debitis sed animi voluptatum tenetur obcaecati, aliquid atque omnis! Sed quas magnam tempora doloremque, praesentium molestias deserunt quod! Sint fugit quo est quisquam sapiente natus!
+            <h6>heading no 1</h6>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut ex ipsa in quas earum voluptates voluptate, alias laborum totam exercitationem maxime tempore labore laudantium quo quaerat repudiandae doloremque officiis velit.
+        Odit quas iste facilis corrupti blanditiis perferendis accusamus sequi tenetur, nihil aperiam totam dicta sed maiores! Porro, enim quam. Quas recusandae commodi dolor animi accusamus voluptatibus, reprehenderit inventore. Repellat, numquam.
+        Vero porro consequuntur nihil, veniam natus ipsum libero sint! Ipsam incidunt vitae necessitatibus rerum expedita. Delectus officia deleniti quibusdam at quos deserunt, laboriosam quam neque consectetur nam modi omnis odio!
+        Obcaecati, quas nam! Esse, facilis illo ex, repellendus libero consectetur quis, alias commodi in quae provident inventore! Unde saepe mollitia optio ratione, eum, omnis ad maiores cupiditate expedita, recusandae explicabo.</div>
+        <div class="child">
+           
+            <h1>heading no 2</h1>
+            <div class="a2">2nd div (text-wrap:wrap)</div>    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis sed dolorum error obcaecati vero, quas incidunt atque facere molestiae, veniam nam rerum corrupti sequi, deleniti id odit eius ipsam quos.
+        Ad deleniti reiciendis quo modi maiores, quos iure molestiae cumque quia, aliquid cum ullam ipsam. Vel odio, ipsum, excepturi repellendus iure recusandae molestiae, quia a quibusdam accusamus sequi. Eos, aliquid.
+        Nesciunt magni impedit accusamus aperiam pariatur quisquam consequatur eius! Autem, inventore. Mollitia cupiditate debitis quis libero fuga placeat praesentium porro fugiat modi qui officia, non magnam repellat excepturi magni dignissimos?
+            <h6>heading no 2</h6>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut ex ipsa in quas earum voluptates voluptate, alias laborum totam exercitationem maxime tempore labore laudantium quo quaerat repudiandae doloremque officiis velit.
+        Perferendis odio quaerat dicta cumque reprehenderit atque asperiores veniam quod rerum distinctio? Sed ipsa ut consequuntur architecto at autem quasi? Quia distinctio nihil pariatur optio! Fuga rem architecto facilis error.
+        Ipsum, beatae nemo. Doloremque optio sint quisquam nobis consequuntur corrupti, enim quidem quod totam vitae fugiat repellendus debitis? Ipsam ea quas possimus accusantium optio. Modi reiciendis exercitationem doloribus temporibus explicabo?
+        Delectus amet ab unde, aut nostrum atque voluptatum reiciendis quas rem veniam animi temporibus cupiditate doloremque hic iste esse, necessitatibus quisquam mollitia. Reprehenderit officia accusantium quam eum animi sint sed.
+        </div>
+        <div class="child">
+            
+            <h1>heading no 3</h1>
+            <div class="a3">3rd div(text-wrap:nowrap) </div>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit delectus ad unde perspiciatis exercitationem asperiores, fugiat, consequatur porro maiores perferendis omnis assumenda, dolorum facilis odio eos officia. Suscipit, exercitationem ea!
+        Exercitationem deleniti impedit, asperiores necessitatibus voluptate fugiat facilis alias libero eligendi accusamus consequatur laudantium perferendis error eius ex! Consectetur repellat totam ratione incidunt similique nemo beatae est, alias cum dolorum?
+            <h6>heading no 3</h6>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut ex ipsa in quas earum voluptates voluptate, alias laborum totam exercitationem maxime tempore labore laudantium quo quaerat repudiandae doloremque officiis velit.
+        Quo consectetur sit, ab odit quia autem laborum! Id sint doloribus sapiente! Nobis architecto sapiente eum illum illo cum possimus. Sequi odit dolores tenetur optio quisquam quo autem dolorum sint?
+        Aspernatur deleniti sapiente perferendis, quaerat labore provident earum voluptatibus a dignissimos deserunt expedita commodi ullam repellendus aperiam voluptate neque officiis eos aliquam placeat ipsam dolorem voluptas consequuntur! Ipsam, ducimus eius?
+        Quis officia itaque magnam omnis asperiores pariatur nobis voluptatum numquam praesentium dolores quos impedit, iusto laudantium, nemo aperiam error reiciendis fugit fugiat aliquid. Ipsam neque vel maxime, atque tenetur eius?</div>
+        <div class="child">
+            
+            <h1>heading no 4</h1>
+            <div class="a4">4th div(text-wrap:wrap)</div>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat, reprehenderit labore corporis qui magnam dolores, quod deleniti odit, error earum perspiciatis impedit! Temporibus quae numquam aperiam quas nemo labore asperiores!
+            <h6>heading no 4</h6>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut ex ipsa in quas earum voluptates voluptate, alias laborum totam exercitationem maxime tempore labore laudantium quo quaerat repudiandae doloremque officiis velit.
+            Obcaecati quos dignissimos quis, temporibus consectetur esse fuga optio, enim corporis voluptatum porro illo veniam cum pariatur architecto incidunt possimus ut. Omnis, sint assumenda exercitationem nisi labore minus nulla dicta.
+            Quibusdam exercitationem sapiente, voluptatum tenetur nobis possimus provident error at minima dignissimos aspernatur esse minus sequi saepe rerum iste accusantium nemo assumenda. Rem recusandae, quibusdam blanditiis repudiandae harum aliquam ullam.
+            Sed quidem corporis, porro mollitia, temporibus tenetur nam, hic quo consequuntur delectus esse sunt aliquid ex doloremque! Consequatur eum magni quidem debitis voluptatem maiores, consequuntur, dolorem odio ipsum dolore modi.
+            Nulla, quam labore ea reprehenderit a unde tempora obcaecati voluptas iusto recusandae consectetur ut inventore qui nesciunt dolor blanditiis! Consectetur vel ad beatae, voluptatibus reiciendis doloribus cupiditate laborum facere quae!
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            width: 500px;
+            height: 500px;
+            border: 1px solid black;
+            outline: green solid 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px;
+        }
+         .box::before{
+            content: " hello everyone!";
+          
+      
+         }
+        .box::after{
+            content: "bye everyone!";
+            
+        }
+        .box:hover::after,
+    .box:hover::before
+    {
+      
+       content:"working in the  box";
+            color: rgb(93, 9, 93);
+            background:linear-gradient(45deg,yellow, red);
+             padding-bottom: 20px;
+             height: 100px;
+             font-size: 30px;
+    }
+    .mulbox{
+        width: 400px;
+        height: 400px;
+        border: 1px solid black;
+        outline: 5px solid yellow;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        overflow: hidden;
+    }
+    .xyz{
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+    }
+    .xyz:nth-child(odd){
+       
+        background-color: pink;
+        color: rgb(251, 46, 6);
+    }
+    .xyz:nth-child(even){
+        background-color: rgb(194, 148, 237);
+        color: rgb(253, 2, 2);
+    }
+    </style>
+</head>
+<body>
+    <h1>pseudo-element(:nth-child/ ::after/ ::before)</h1>
+    <div class="box">
+        <div class="mulbox">
+            <div class="xyz">box1</div>
+            <div class="xyz">box2</div>
+            <div class="xyz">box3</div>
+            <div class="xyz">box4</div>
+            <div class="xyz">box5</div>
+            <div class="xyz">box6</div>
+            <div class="xyz">box7</div>
+            <div class="xyz">box8</div>
+        
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,99 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+    
+
+
+        body{
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(45deg, black, red );
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .parent{
+            width: 700px;
+            height: 400px;
+            background-color: rgb(7, 2, 20);
+            display:flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            
+        }
+    .left
+    {
+        width: 400px ;
+        height: 250px;
+        background-color: white;
+        border-radius: 20%;
+        border-top-left-radius:0 ;
+        border-bottom-left-radius: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+     .middle
+    {
+        width:150px ;
+        height: 150px;
+        background-color: rgb(247, 9, 9);
+        border-radius: 20%;
+        border-top-left-radius:0 ;
+        border-bottom-left-radius: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+     .right
+    {
+        width:100%;
+        height: 250px;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        line-height: 3rem;
+    }
+    </style>
+</head>
+<body>
+    
+    <div class="parent">
+        <div class="left">
+        <i class="fa-solid fa-circle-user"></i>
+        <h1>ROBERT ELVY</h1>
+        <span>SOFTWARE ENGG.</span>
+        </div>
+        <div class="middle">
+            <h3><i class="fa-solid fa-location-dot"></i></h3>
+            <h3><i class="fa-solid fa-phone"></i></h3>
+            <h3><i class="fa-solid fa-envelope"></i></h3>
+            <h3><i class="fa-solid fa-arrow-up-right-from-square"></i></h3>
+        </div>
+        <div class="right">
+            <h3>LINE AQUA, SOUTHERN AVENUE</h3>
+            <h3>+92 02345 2344 23</h3>
+            <h3>ROBERTELVY@GMAIL.COM</h3>
+            <h4>VICTORYICE.COM/ADAMSMITH</h4>
+        </div>
+    </div>
+</body>
+</html>

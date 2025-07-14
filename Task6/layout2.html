@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+        .mainbox{
+            width: 400px;
+            height: 550px;
+            background-color: rgb(218, 186, 249);
+            border: 6px solid black ;
+            margin: 10px ;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .box{
+            width: 170px;
+            height: 150px;
+            background-color: rgb(178, 118, 238);
+            border: 2px solid purple;
+        }
+        .box5{
+            width: 360px;
+        }
+
+        .box3{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .b3{
+            width: 30px;
+            height: 60px;
+            background-color: rgb(134, 46, 221);
+            border: 2px solid rgb(128, 42, 128);
+        }
+        .c1{
+            height: 60px;
+        }
+        .c2{
+            height: 50px;
+        }
+        .c3{
+            height: 30px;
+        }
+        .c4{
+            height: 60px;
+        }
+        .box4{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .b4{
+            width: 30px;
+            height: 140px;
+            background-color: rgb(134, 46, 221);
+            border: 2px solid rgb(128, 42, 128);
+            border-radius: 4px;
+        }
+        .b5{
+            width:75px ;
+            height: 60px;
+            background-color: rgb(134, 46, 221) ;
+            display: inline-block;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items:baseline;
+            line-height: 30px;
+            text-align: center;
+            text-decoration: line-through;
+        }
+        .e1{
+            width: 65px;
+            height: 55px;
+            margin: 10px;
+        }
+        .e2{
+            width: 70px;
+            height:110px;
+            margin: 10px;
+            padding-top: 20px;
+        }
+        .e3{
+            width: 60px;
+            height: 10px;
+            margin: 10px;
+           padding-bottom: 30px;
+        }
+        .e4{
+            width: 70px;
+            height: 90px;
+            margin: 10px;
+            padding-top: 20px;
+        }
+        /* use of flex-end property is been use here in box2 */
+        .box2{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: flex-end;
+            padding-bottom: 10px;
+        }
+        .b2{
+            width: 30px;
+            height: 60px;
+            background-color: rgb(134, 46, 221);
+            border: 2px solid rgb(128, 42, 128);
+        }
+        .f1{
+            height: 90px;
+        }
+        .f2{
+            height: 60px;
+        }
+        .f3{
+            height: 40px;
+        }
+        .f4{
+            height: 65pxS;
+        }
+        /* use of flex-start property is been use here in box1 */
+        .box1{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: flex-start;
+            padding-top: 10px;
+        }
+        .b1{
+            width: 30px;
+            height: 60px;
+            background-color: rgb(134, 46, 221);
+            border: 2px solid rgb(128, 42, 128);
+        }
+        .a1{
+            height: 90px;
+        }
+        .a2{
+            height: 60px;
+        }
+        .a3{
+            height: 40px;
+        }
+        .a4{
+            height: 65pxS;
+        }
+     </style>
+</head>
+<body>
+    <div class="mainbox">
+        <div class="box box1">
+           <div class="b1 a1"></div>
+           <div class="b1 a2"></div>
+           <div class="b1 a3"></div>
+           <div class="b1 a4"></div>
+        </div>
+        <div class="box box2">
+            <div class="b2 f1"></div>
+            <div class="b2 f2"></div>
+            <div class="b2 f3"></div>
+            <div class="b2 f4"></div>
+        </div>
+        <div class="box box3">
+            <div class="b3 c1"></div>
+            <div class="b3 c2"></div>
+            <div class="b3 c3"></div>
+            <div class="b3 c4"></div>
+        </div>
+        <div class="box box4">
+            <div class="b4 d1"></div>
+            <div class="b4 d2"></div>
+            <div class="b4 d3"></div>
+            <div class="b4 d4"></div>
+        </div>
+        
+        <div class="box box5" >
+            <div class="b5 e1">text text</div>
+            <div class="b5 e2">text text</div>
+            <div class="b5 e3">text text</div>
+            <div class="b5 e4">text text</div>
+        </div>
+    </div>
+</body>
+</html>

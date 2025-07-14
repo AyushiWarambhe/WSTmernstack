@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        body{
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(90deg, rgb(117, 247, 117), rgb(222, 27, 85)) ;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+            text-align: center;
+            line-height: 30px;
+        }
+        .box{
+            width: 400px;
+            height: 300px;
+            border: 3px solid black;
+        }
+        h1{
+            position: absolute;
+            left: 70px;
+            top: 0;
+            right: 70px;
+            justify-self: center;
+            align-self: center;
+                 
+        }
+        .bb1{
+            width: 350px;
+            height: 250px;
+            border: 2px solid black;
+            border-radius: 20px;
+            justify-self: center;
+            align-self: center;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+           
+        }
+        .b1{
+            width: fit-content;
+            height: fit-content;
+            border: 1px solid black;
+        }
+        .a1{
+            width: 120px;
+            height: 150px;
+            position: static;
+            background-color: rgb(226, 48, 185);
+            top: 0;
+        }
+        .b2{
+            width: fit-content;
+            height: fit-content;
+            border: 1px solid black;
+        }
+        .a2{
+            width: 120px;
+            height: 150px;
+            position: relative;
+            background-color: rgb(223, 33, 87);
+            top: 30px;
+            left: 40px;
+        }
+        .b4{
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            
+        }
+        .a4{
+            width: 120px;
+            height: 150px;
+            position: absolute;
+            
+            top: 30px;
+            left: 40px;
+        }
+        .b3{
+           
+            justify-self: center;
+            align-self: center;
+            border: 1px solid black;
+            font-size: 9px;
+          
+
+        }
+        .a3{
+           
+            position: fixed;
+            background-color: pink;
+            
+        }
+        .box3{
+            width: 220px;
+            height: 200px;
+            overflow: scroll;
+            overflow-wrap: normal;
+            border: 1px solid black;
+            font-size: 17px;
+            text-align: center;
+              
+        }
+        .b5{
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+        }
+        .a5{
+            width: 40px;
+            height: 40px;
+            background-color: pink;
+            position: absolute;
+            z-index: 9;
+        }
+        .a6{
+            width: 80px;
+            height: 80px;
+            background-color: rgb(193, 41, 66);
+            position: absolute;
+            z-index: 2;
+            
+        }
+        h6{
+            position: sticky;
+            width: 100%;
+            top: 100px;
+            background-color: aqua;
+            font-size: 11px;
+        }
+         h2{
+            position: sticky;
+            width: 100%;
+            top: 0;
+            background-color: aqua;
+            font-size: 11px;
+         }   
+        
+    </style>
+</head>
+<body>
+    <h1>CSS Position</h1>
+    <div class="box">static
+        <div class="bb1">
+        <div class="b1">
+            <div class="a1"></div>
+        </div>
+        </div>
+    </div>
+    <div class="box">Relative
+         <div class="bb1">
+        <div class="b2">
+            <div class="a2"></div>
+        </div>
+        </div>
+    </div>
+    <div class="box">Fixed
+         <div class="bb1 box3">
+            
+        <div class="b3">
+          
+             <h6>heading</h6>
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti quis tempora dolorem adipisci similique, quisquam et illo ipsum nisi neque in voluptatem voluptates possimus! Officia adipisci eum quisquam nostrum ex.
+           Harum sed maxime fugiat suscipit inventore labore. A fugiat corporis accusamus impedit adipisci nihil maiores fugit! Labore ratione velit doloribus blanditiis laborum exercitationem, dolorem facere nostrum quas quos fugiat corrupti.
+           Reiciendis accusantium repudiandae impedit voluptatibus nobis eligendi quia eos. Ad, repellat modi. Consectetur illum eveniet pariatur, cumque modi dolore? Consectetur ad ea nisi eos veritatis delectus nobis cumque impedit tempore.
+            <h2>heading2222</h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci molestiae, in temporibus libero illo impedit aut corrupti numquam, delectus dignissimos voluptatem accusantium necessitatibus maxime nisi eligendi beatae voluptate quod magni.
+            Vero in, inventore commodi aperiam, laboriosam sed perspiciatis repudiandae illum ullam quod exercitationem dolorem doloribus libero tenetur assumenda voluptates. Hic eum cumque excepturi ullam accusantium, dolorem quis aliquam aut maiores?
+            Iste, aspernatur eveniet. Facilis aliquid, officiis reprehenderit iusto vel ad repudiandae molestiae dolorem velit consectetur beatae veritatis, odit nostrum laborum ab voluptatibus illum aliquam et aperiam veniam recusandae perspiciatis tenetur.
+           <div class="a3"></div>
+        </div>
+        </div>
+    </div>
+    <div class="box">Absolute
+         <div class="bb1">
+             absolute property is relatable according to its viewport
+        <div class="b4">
+            <div class="a4"></div>
+        </div>   
+        </div>
+    </div>
+    <div class="box">Z-index
+         <div class="bb1">
+        <div class="b5">
+            <div class="a5"></div>
+            <div class="a6"></div>
+          
+                </div>
+        </div>
+    </div>
+</body>
+</html>

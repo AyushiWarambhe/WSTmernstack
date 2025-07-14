@@ -1,0 +1,24 @@
+short note on the flex child shorthand property in CSS:
+
+📦 CSS flex Shorthand (Flex Child)
+The flex shorthand is used on flex items (children) to set how they grow, shrink, and their base size.
+
+🔧 Syntax:
+css
+Copy
+Edit
+flex: [flex-grow] [flex-shrink] [flex-basis];
+🧱 Components:
+flex-grow: how much the item can grow (1 = can grow, 0 = no grow)
+
+flex-shrink: how much the item can shrink (1 = can shrink)
+
+flex-basis: initial size before growing/shrinking (auto, 0, 100px, etc.)
+
+📝 Examples:
+css
+Copy
+Edit
+flex: 1;              /* = 1 1 0%, can grow and shrink equally */
+flex: 0 1 auto;       /* default: no grow, shrink if needed */
+flex: 2 0 100px;      /* grow twice as fast, no shrink, base size 100px */

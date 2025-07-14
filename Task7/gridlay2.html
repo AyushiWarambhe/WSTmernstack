@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .grid
+        {
+            width: 400px;
+            height: 400px;
+            background-color: aquamarine;
+            display : grid;
+            grid-template-columns: auto auto;
+            grid-template-rows: auto auto;
+            align-items: center;
+            justify-items: center;
+            border: 2px dotted black;
+            margin : 22px ;
+        }
+        .two{
+            width: 150px;
+            height: 300px;
+            border: 1px solid red;
+            background-color: white;
+            display: grid;
+            grid-template-columns: 45px 60px 45px ;
+            grid-template-rows:auto;
+           text-decoration: underline;
+           font-size: small;
+           
+        }
+    
+        .box{
+            width: 100%;
+            height: 100%;
+            border: 1px solid red;
+            align-items: center;
+            justify-items: center;
+            
+        }
+        .a1{
+            grid-column-start:1;
+            grid-column-end:2 ;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+         .a2{
+            grid-column-start:2 ;
+            grid-column-end:3 ;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+         .a3{
+            grid-column-start:3 ;
+            grid-column-end:4 ;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+    .a4{
+            grid-column-start:1 ;
+            grid-column-end:2 ;
+        grid-row-start: 2;
+            grid-row-end:3 ;
+            font-size: 9px;
+            text-align: center;
+        }
+    .a5{
+            grid-column-start:2;
+            grid-column-end:3 ;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            font-size: 9px;
+        }
+    .a6{
+            grid-column-start:3 ;
+            grid-column-end:4 ;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            font-size: 9px;
+            text-align: center;
+        }
+    .a7{
+            grid-column-start:1 ;
+            grid-column-end:2 ;
+            grid-row-start: 3;
+            grid-row-end: 4;
+        }
+    .a8{
+            grid-column-start:2 ;
+            grid-column-end:3 ;
+            grid-row-start: 3;
+            grid-row-end: 4;
+        }
+    .a9{
+            grid-column-start:3 ;
+            grid-column-end:4 ;
+            grid-row-start: 3;
+            grid-row-end: 4;
+        }
+    .boxes{
+            width: 100%;
+            height: 100%;
+            border: 1px solid red;
+            align-items: center;
+            justify-items: center;
+            
+        }
+        .b1{
+            grid-column-start:1;
+            grid-column-end:2 ;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            font-size: 9px;
+        }
+         .b2{
+            grid-column-start:2 ;
+            grid-column-end:3 ;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            font-size: 9px;
+            text-align: center;
+        }
+         .b3{
+            grid-column-start:3 ;
+            grid-column-end:4 ;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            font-size: 9px;
+            text-align: center;
+        }
+    .b4{
+            grid-column-start:1 ;
+            grid-column-end:2 ;
+        grid-row-start: 2;
+            grid-row-end:3 ;
+        }
+    .b5{
+            grid-column-start:2;
+            grid-column-end:3 ;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+    .b6{
+            grid-column-start:3 ;
+            grid-column-end:4 ;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+    .b7{
+            grid-column-start:1 ;
+            grid-column-end:2 ;
+            grid-row-start: 3;
+            grid-row-end: 4;
+        }
+    .b8{
+            grid-column-start:2 ;
+            grid-column-end:3 ;
+            grid-row-start: 3;
+            grid-row-end: 4;
+        }
+    .b9{
+            grid-column-start:3 ;
+            grid-column-end:4 ;
+            grid-row-start: 3;
+            grid-row-end: 4;
+        }
+    
+
+        span{
+            font-size: small;
+            padding-left:10px;
+            padding-right:10px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Grid layout 2 </h1>
+    <div class="grid">
+        <div class="two l1">
+            <div class="box a1"> box 1</div>
+            <div class="box a2">box 2</div>
+            <div class="box a3"> box 3</div>
+            <div class="box a4">
+                The CSS grid properties are supported in all modern browsers.The CSS grid properties are supported in all modern browsers.
+                 The CSS grid properties are supported in all modern browsers.
+            </div>
+            <div class="box a5"> <h2>Grid systems</h2>
+                <img src="../img.png" alt="" height="60px" width="40px">
+                <span>this is a image one</span>
+                A grid layout consists of a parent element (the grid container), with one or more grid items. 
+            </div>
+            <div class="box a6">
+                The CSS grid properties are supported in all modern browsers.The CSS grid properties are supported in all modern browsers.The CSS grid properties are supported in all modern browsers.
+            The CSS grid properties are supported in all modern browsers.   
+            </div>
+            <div class="box a7"> box 7</div>
+            <div class="box a8">box 8</div>
+            <div class="box a9">box 9</div>
+            
+        </div>
+        <div class="two l2">
+            <div class="boxes b1"><h2>Grid systems</h2>
+                <img src="../img.png" alt="" height="60px" width="40px">
+                <span>This is image two</span>
+                The
+element becomes a grid container when its display property is set to grid or inline-grid.
+            </div>
+            <div class="boxes b2">
+                A grid layout consists of a parent element (the grid container), with one or more grid items. All direct children of the grid container automatically become grid items. The
+element becomes a grid container when its display property is set to grid or inline-grid.
+            </div>
+            <div class="boxes b3">
+                The Grid Layout Module offers a grid-based layout system, with rows and columns.
+
+The Grid Layout Module allows developers to easily create complex web layouts.
+The CSS grid properties are supported in all modern browsers.
+            </div>
+            <div class="boxes b4">box 4</div>
+            <div class="boxes b5"> box 5</div>
+            <div class="boxes b6"> box 6</div>
+            <div class="boxes b7"> box 7</div>
+            <div class="boxes b8"> box 8</div>
+            <div class="boxes b9">
+               box 9
+            </div>
+            
+        </div>
+        <span>There are numeruous ways to use a basic column grid.</span>
+        <span>In this variation, images and text share column space </span>
+    </div>
+</body>
+</html>

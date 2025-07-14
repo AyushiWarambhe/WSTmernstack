@@ -1,0 +1,34 @@
+short note on the outline property in CSS:
+
+✏️ CSS outline Property (Short Note)
+The outline property draws a line around an element, outside the border. It is used mainly for focus indicators and accessibility.
+
+🔧 Syntax:
+css
+Copy
+Edit
+outline: [color] [style] [width];
+🧱 Components:
+outline-color: line color (red, #000, transparent)
+
+outline-style: line style (solid, dashed, none, etc.)
+
+outline-width: line thickness (1px, thin, etc.)
+
+📝 Example:
+css
+Copy
+Edit
+outline: 2px solid blue;
+This sets a blue solid outline 2px thick.
+
+🧠 Notes:
+Unlike borders, outlines don’t take up space (they don’t affect layout).
+
+You can remove outlines with:
+
+css
+Copy
+Edit
+outline: none;
+(But avoid this unless replacing with another visible focus style.)
