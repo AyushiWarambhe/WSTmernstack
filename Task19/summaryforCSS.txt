@@ -1,0 +1,29 @@
+          CSS LIBARAY
+1. css Library:-
+      A css libaray is a collection o pre-written code that helps 
+      you style our html elements easily and quickly without writing 
+      all the css code in style css.
+
+
+    
+2. usage og css library :-
+    saves time- don't need to style each and every singe element 
+    using css properties.
+    Cross-Broauer support-libarires handle compatibility issues.
+    responsive design- Most libraries are already optimized for 
+    mobile , tablet and deesktop 
+
+
+3.two popular libararies are used
+       1.bootstrap
+               bootstrap give you ready-made UI components like
+                button, forms, grid , etc.we don't need to write
+               css code in style tag instead we write css classes.
+       2.TAILWIND css
+               Tailwind css gives you writing classes (small bulding blocks). 
+               you create your own design using these classes.Instead of writing 
+               your own css you use small utility classes directly in your html to 
+               style things.
+                      
+
+
