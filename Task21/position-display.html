@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../bootstrap/bootstrap-5.3.7-dist/css/bootstrap.css">
+    <style>
+        *
+        {
+            margin: 0;
+            height: 0;
+        }
+        .c1{
+            width: 100px;
+            height: 100px;
+        }
+        .c2{
+            width: 200px;
+            height: 200px;
+        }
+        .child{
+            width: 400px;
+            height: 400px;
+            margin: 5rem;
+            padding: 2rem;
+            display:inline-block;
+            gap: 2rem;
+                }
+                  .element{
+            width: 500px;
+            height: 500px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: flex-start;
+        }
+        .e1{
+            width: 200px;
+            height: 200px;
+            display: flex;
+            justify-self: center;
+            align-self: center;
+        }
+        body{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .bigbox2{
+            width: 500px;
+            height: 500px;
+            margin: 8rem;
+            padding: 15rem;
+            text-wrap: nowrap;
+        }
+        html{
+            background: linear-gradient(45deg, yellow,pink);
+        }
+        
+    </style>
+</head>
+<body>
+    
+     <div class="bigbox1 bg-body-secondary">
+    <h1 class="fst-italic ">Position in css bootstrap !!</h1>
+    <div class="element m-5 p-3 bg-danger-subtle position-relative border 
+     border-dark" >
+         outer box  <br><b>position-relative</b>
+        <div class="e1 bg-success-subtle text-center position-absolute top-50 start-50 border 
+        border-2 border-dark border-top-0 border-start-0 ">inner box 1 <br>
+        <b>position-absolute</b> </div>
+        <div class="e1 bg-warning-subtle text-center text position-absolute bottom-50 end-50
+        border border-dark border-2 border-start-0 border-top-0 
+        ">inner box 2 <br>
+         <b> position-absolute </b></div>
+    </div>
+    
+    </div>
+     <div class="bigbox2 ">
+    <h1 class="fst-italic">Display in bootstrap css</h1>
+   
+    <div class="child m-5">
+        display:inline
+        <br>
+        <br>
+    <div class=" c1 d-inline p-2 text-bg-primary">d-inline</div>
+<div class=" c1 d-inline p-2 text-bg-dark">d-inline</div>
+<br>
+<br>
+     display:block
+     <br>
+<div class="c2 d-block p-2 text-bg-primary">d-block</div>
+<div class=" c2 d-block p-2 text-bg-dark">d-block</div>
+</div>
+    </div>
+    
+</body>
+</html>
