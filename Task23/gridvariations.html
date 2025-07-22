@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../bootstrap/bootstrap-5.3.7-dist/css/bootstrap.css">
+    <style>
+       .parent{
+        height: 200px;
+       }
+       .child{
+        height: 50px;
+       }
+       .p1{
+        height: 100px;
+       }
+       .p2{
+        height: 100px;
+       }
+
+    </style>
+</head>
+<body>
+      <h1>Grid variations in bootstrap!</h1>
+      <h3>USe of container(breakpoints) and grid </h3>
+      
+      <div class="parent row container bg-danger-subtle pt-4 border 
+      border-1 gap-3 border-dark">
+        <div class="child col-1 bg-primary text-light">col-2</div>
+        <div class="child col-3 bg-success text-light">col-3</div>
+        <div class="child col-5 bg-warning text-light">col-5</div>
+        <div class="child col-4 bg-secondary text-light">col-4</div>
+        <div class="child col-2 bg-warning text-light">col-2</div>
+        <div class="child col-1 bg-info text-light">col-1</div>
+      </div>
+      <h4>Nesting row and columns</h4>
+      <div class="p2 container bg-success p-4 border border-1">
+        <div class="child row bg-success-subtle">
+            <div class="col-3 bg-primary-subtle">col1</div>
+            <div class="col bg-success-subtle text-center ">col1
+                <div class=" row bg-danger ">
+                    <div class=" col bg-danger-subtle">mini-col</div>
+                    <div class="col bg-warning-subtle">mini-col</div>
+                </div>
+            </div>
+        </div>
+      </div>
+      <h4 class="text-start">use of grid</h4>
+   <div class="parent container bg-danger-subtle 
+      border border-1 border-dark
+      text-yt text-center row
+       pt-5"> 
+        <div class="child container bg-dark text-light col-5">
+            child </div>
+        <div class="child container bg-info col">child</div>
+        <div class="child container bg-dark text-light col">child</div>
+        <div class="child container bg-light col">child</div>
+      </div>
+      <h4 class="text-centers">use of stacked horizontal</h4>
+      <div class="parent container bg-dark p-5 text-center">
+  <div class="child row container bg-danger-subtle
+   border border-1"> 
+    <div class="col-sm-8 border border-2 border-primary ">col-sm-8</div>
+    <div class=" col-sm-4 border border-2 border-primary">col-sm-4</div>
+  </div>
+  <div class="child bg-success-subtle row container border border-1">
+    <div class="col-sm border border-2 border-primary">col-sm</div>
+    <div class=" col-sm border border-2 border-primary">col-sm</div>
+    <div class=" col-sm border border-2 border-primary">col-sm</div>
+  </div>
+</div>
+ <h4>row columns</h4>
+<div class="p1 container text-center bg-danger-subtle">
+  <div class="row row-cols-2">
+    <div class="col child border border-1 border-dark">Column</div>
+    <div class="col child  border border-1 border-dark">Column</div>
+    <div class="col child  border border-1 border-dark">Column</div>
+    <div class="col child  border border-1 border-dark">Column</div>
+  </div>
+</div>
+</body>
+</html>
