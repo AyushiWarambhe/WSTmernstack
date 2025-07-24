@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../bootstrap/bootstrap-5.3.7-dist/css/bootstrap.css">
+    <style>
+        body{
+            
+            color: black;
+            font-weight: 600;
+            background: linear-gradient(120deg, pink, yellow);
+        }
+      
+    </style>
+</head>
+<body  class="m-2 p-2 gap-0 d-flex row">
+   <h1 class="text-center ">Form using bootstrap</h1>
+    <form class="container-md col-4 border border-dark rounded">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-dark m-2">Submit</button>
+
+      </form>
+      <form action="" class="container-md col-5 border border-dark p-2 rounded">
+       Name <input type="text" name="" id="" class="form-control" >
+       phone no <input type="number" name="" id="" class="form-control">
+       gender <select name="" id="" class="form-control">
+        <option value="">Male</option>
+        <option value="">Female</option>
+        <option value="">Other</option>
+       </select>
+       <label for="customRange1" class="form-label p-2 m-2">Example range</label>
+        <input type="range" class="form-range" id="customRange1">
+       <button class="p-2 m-2 rounded bg-primary ">submit</button>
+      </form>
+      <form action="" class="container col-4 border m-5 p-2
+       border-dark rounded">
+        <label for="form3">
+            Adhar holder name
+            <input type="type" class="form-control"
+             placeholder="enter adhar name">
+            Adhar holder number
+            <input type="number"class="form-control" placeholder="enter adhar no">
+             <button class="form-control p-2 m-3 bg-dark text-light">click me !</button>
+        </label>
+      </form>
+      <form action="" class="container col-5 border m-5 p-2
+      border-dark rounded">
+       <label for="form3">
+           enter some text
+           <input type="type" class="form-control"
+            placeholder="enter">
+           enter some random number
+           <input type="number"class="form-control" 
+           placeholder="numners!">
+           number ranger
+           <input type="range" class="form-range">
+            <button class="form-control p-2 m-3 
+            bg-success text-light">look your selected numbers here</button>
+       </label>
+     </form>
+</body>
+</html>
