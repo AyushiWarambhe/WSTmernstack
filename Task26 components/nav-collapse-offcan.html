@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="../bootstrap/bootstrap-5.3.7-dist/css/bootstrap.css">
+    <script src="../bootstrap/bootstrap-5.3.7-dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body style="background: linear-gradient(120deg,yellow, green);" class="p-4">
+   <h1>navbar with variations</h1>
+  <nav class=" navbar navbar-expand-lg 
+    container bg-danger-subtle">
+    <div class="container-fluid">
+            <a class="navbar-brand fs-4" href="#">
+                PositiveBeings</a>
+                <button class="navbar-toggler"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarnav">
+                    <span class="navbar-toggler-icon bg-light"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarnav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">contactUs</a></li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="#">help</a></li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Login</a></li>
+                   <li class="nav-item">
+                    <a class="nav-link" href="#">report</a></li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#">disabled</a>
+                  </li>
+                </ul>
+                <input type="text" placeholder="search engine">
+                <button>submit</button>
+            </div>
+    </div>
+   </nav>
+   <hr>
+   <h1>offcanvas variations</h1>
+   <div class="container-fluid p-3 m-3">
+      <a class="btn btn-primary" href="#offstart" data-bs-toggle="offcanvas">
+        click on link button</a>
+        <button class="btn btn-danger" type="button"
+        data-bs-target="#offstart" data-bs-toggle="offcanvas">slide from left</button>
+        
+        <div class="offcanvas offcanvas-start" id="offstart">
+               <h1 class="text-center bg-danger m-4 p-4 text-warning">offcanvas</h1>
+               <p class="m-2 p-4 bg-danger-subtle">learning about collapse and offcanvas</p>
+               <h4 class="text-primary fs-2 p-2 m-2">Build hidden sidebars into your project for navigation,
+                shopping carts, and more with a few classes and our JavaSc
+                ript plugin.
+               </h4>
+               <button class="btn btn-primary m-2 "> clear
+
+               </button>
+        </div>
+        <hr>
+    <h1>collapses</h1>
+       <p class="d-inline-flex gap-1 m-3">
+  <a class="btn btn-warning" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+    Link wali button
+  </a>
+  <button class="btn btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+    Button with collapse
+  </button>
+</p>
+<div class="collapse" id="collapseExample">
+  <div class="card card-body">
+    Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+  </div>
+</div>
+   </div>
+   <p class="d-inline-flex gap-1 m-3 p-2">
+  <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle first element</a>
+  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Toggle second element</button>
+  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Toggle both elements</button>
+</p>
+<div class="row">
+  <div class="col">
+    <div class="collapse multi-collapse" id="multiCollapseExample1">
+      <div class="card card-body">
+        Some placeholder content for the first collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="collapse multi-collapse" id="multiCollapseExample2">
+      <div class="card card-body">
+        Some placeholder content for the second collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
