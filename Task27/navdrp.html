@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="../bootstrap/bootstrap-5.3.7-dist/css/bootstrap.css">
+   <script src="../bootstrap/bootstrap-5.3.7-dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <h1>Navbar</h1>
+    <nav class="navbar navbar-expand-lg bg-danger-subtle p-3 g-1">
+        <div class="container-fluid justify-content-evenly">
+            <a class="navbar-brand fs-3 " href="#">
+                <span class="navbar-brands">brandPicture</span>
+                <img src="./beach.png" style="height: 70px; width: 70px;" alt="">
+            </a>
+            <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarcontent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+           
+            <div class="collapse navbar-collapse" id="navbarcontent">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">home</a>
+                </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">login</a>
+                </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">admin</a>
+                </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">help</a>
+                </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">disabled</a>
+                </li>
+                <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" 
+          role="button" data-bs-toggle="dropdown">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+            </ul>
+           
+            <form action="" class="d-flex form-control bg-danger-subtle">
+                <input class="form-control" type="search" placeholder="serach">
+                <button type="submit" class=" bg-danger text-warning border rounded p-2">submit</button>
+                
+            </form>
+            </div>
+            
+        </div>
+    </nav>
+     <div class="container-fluid m-2">
+        <h1>offcanvas button</h1>
+        <button class="btn btn-success" type="button"
+        data-bs-toggle="offcanvas" data-bs-target="#offcanvasin">button for canvas-start</button>
+        <div class="offcanvas offcanvas-start" id="offcanvasin">
+            <h1>offcanvas page</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa repudiandae eum ut magni, maxime nemo reiciendis facilis quos quasi. Quam at libero iusto voluptatum ipsum blanditiis dicta ratione ullam facilis.
+            Fugit, impedit aliquid assumenlore! Repellat, eveniet voluptatibus sed tempore atque quaerat ipsum architecto eligendi consequatur doloremque unde eum non veniam accusantium, natus pariatur, accusamus deleniti repudiandae corrupti beatae!</p>
+            <button  class="btn btn-success ">download page</button>
+            <button class="btn btn-success m-3 p-4 " data-bs-toggle="collapse" data-bs-target="#coll">collapsing</button>
+            <div class="collapse" id="coll">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto nostrum nesciunt, molestiae facilis alias illum vitae obcaecati totam labore voluptatum impedit id similique, ab eius nobis error iste quaerat enim.
+            Illum sit nisi doloremque alias sunt quam magnam atque totam tempora maiores. Unde dolorem reprehenderit quas repudiandae nemo! Molestiae, dolorem odit dolores voluptas optio facilis fuga deleniti doloremque soluta. Nemo?
+            Ipsam, beatae? Minus cum ipsum ex labore cupiditate autem iste facilis inventore obcaecati voluptate nostrum a vel debitis, minima molestiae, pariatur magnam omnis? Odio maxime voluptates neque voluptas ab cum.
+            Molestias dolor in modi architecto deserunt quibusdam deleniti a error culpa qui nihil perferendis eum maiores sequi repellendus, fugit enim! Voluptas tempore fugit expedita minus odit deserunt, unde aliquam voluptatum.
+            Ratione magni provident cumque temporibus sint, eos excepturi illo, explicabo modi ad porro veniam totam officiis obcaecati possimus tenetur! Dolores nam illo quam aliquam voluptates reiciendis, culpa a autem quos.
+            Numquam laborum accusantium eum quo aperiam! Tempore, nobis veritatis facilis quae voluptatibus quidem vel tenetur dignissimos laboriosam. Eaque quisquam ullam et eius. Suscipit enim nihil magni nemo commodi atque nostrum?
+            Minima, molestias placeat iure ullam ducimus magnam debitis dicta quaerat voluptates, incidunt deserunt nesciunt odit voluptatum pariatur quos accusantium, omnis amet laboriosam dignissimos exercitationem officia! Ipsa sint libero facere atque?
+            Perspiciatis possimus illo explicabo alias rerum inventore sed pariatur expedita
+             eligendi neque dolorum hic aliquam quaerat numquam, atque tempora obcaecati praesentium
+              iusto perferendis nihil quo provident sapiente fugit architecto? Culpa.</div>
+
+        </div>
+     </div> 
+     
+</body>
+</html>
