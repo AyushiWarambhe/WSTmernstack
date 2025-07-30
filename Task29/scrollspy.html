@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../Bootstrap/bootstrap-5.3.7-dist/css/bootstrap.css">
+    <script src="../Bootstrap/bootstrap-5.3.7-dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        /*.nav-link.active{
+            background-color: transparent !important;
+            text-decoration: underline ;
+            
+        }*/
+        .col{
+            height: 250px;
+            overflow: scroll;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <h2 class="text-center fw-2">SCROLL SPY</h2>
+    <div class="container-fluid "  >
+        <div class="container border border-dark p-3"data-bs-target="#navbar1"
+         data-bs-target="#list-example" data-bs-spy="scroll">
+            <div class="row">
+                
+                <div class="col-3 border-end">
+                    <div id="list-example" class="my-5 list-group">
+                      <a class="avtive list-group-item list-group-item-action"
+                       href="#item1">Item 1</a>
+                      <a class="list-group-item list-group-item-action"
+                       href="#item2">Item 2</a>
+                      <a class="list-group-item list-group-item-action" href="#item3">Item 3</a>
+                      <a class="list-group-item list-group-item-action" href="#item4">Item 4</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div>
+                        <h3 id="item1">Item no 1</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem perspiciatis odit eaque tempora cumque, nisi asperiores distinctio sed repellendus, facilis consequatur, consequuntur beatae quod obcaecati animi veritatis a ab reiciendis.
+                        Perferendis iusto ullam, reiciendis exercitationem, eius facere consectetur voluptatibus non ipsum dolorum alias maxime sapiente dolorem nostrum? Adipisci dolorem laudantium quis reiciendis pariatur harum, omnis, tempore beatae amet, optio ex!
+                        Vitae consequatur totam dolore quo sint fugiat incidunt quia, ad qui quis reiciendis quasi eum aspernatur nesciunt asperiores possimus distinctio magnam dolorum dolorem vero in molestiae debitis! Obcaecati, at quidem.</p>
+                    
+                        <h3 id="item2">Item no 2</h3>
+                        <p>Lorem 
+                            <img src="./BackPic.jpg" alt="">
+                        </p>
+                        <h3 id="item3">Item no 3</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab aliquam iure facilis, reiciendis blanditiis explicabo quibusdam maxime in aut amet nihil voluptates, animi sint. Quaerat reiciendis deserunt illo sit id.
+                        Ea sunt rem nesciunt mollitia repellendus amet libero in debitis totam qui accusamus soluta, ad iure aliquid, consectetur reprehenderit quibusdam cupiditate provident impedit! Culpa facere accusantium quisquam, rem asperiores dicta.
+                        Voluptate consequatur praesentium tenetur, culpa, quia error ipsum quos ducimus et ratione officia temporibus dignissimos laudantium cumque molestias consectetur ea magni nostrum dicta odio sit voluptatibus consequuntur. Est, inventore facilis.</p>
+
+                        <h3 id="item4">Item  no 4</h3>
+                        <p> <img src="./BackPic.jpg" alt=""></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
