@@ -13,7 +13,7 @@
     --accent3RGB: 125, 226, 209;
     --lightRGB: 255, 250, 251;
 }
-
+/*GLOBAL*/
 body {
     background-color: rgba(var(--lightRGB), 1) !important;
     font-family: "Space Mono", monospace !important;
