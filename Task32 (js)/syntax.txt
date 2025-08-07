@@ -1,0 +1,197 @@
+VARIABLES AND DATATYPE!!!!!!!
+
+variable is like a container to a store data.
+var- older way, but can change the value.
+let- can change the value.
+const- cannot change the value
+
+
+#var
+var → (old, avoid using now)
+var age = 25;
+You can change the value
+
+#let
+let → (most commonly used)
+let city = "Mumbai";
+city = "Delhi";    // can change it
+Can change the value
+
+#const
+const → (for constants)
+const country = "India";
+country = "USA";  // Error! can't change a const
+Value cannot be changed
+
+
+#rules
+. Name has to be unique within the same scope, name can be alpha-numeric
+ but cannot start with a number.
+. No space and no spcial charchters (!@#$%^&*()) within a name ,
+ exception which is _
+
+
+#primitive 
+number(int(4Byte),
+float (4Byte), 
+double(8Byte), 
+long(16Byte), 
+short(2Byte),
+byte(1Byte)), 
+string (group of charchter "Abc123" ),
+boolean (true, false) , 
+[NaN(not a number)["A123" -> NaN], Undefined, Null] error data types
+
+
+#non-primitive
+array(collections of element),
+object(key:value pairs), 
+function/method/module
+Javascript variable syntax.
+let variableName = value;   // Modern way
+const variableName = value; // Constant 
+
+
+1. String
+let name = "Ayushi";
+
+
+
+2. Number
+let age = 22;
+let price = 99.99;
+
+
+
+3. Boolean
+let isStudent = true;
+let isAdmin = false;
+
+
+4. Undefined
+let grade;
+
+
+
+5. Null
+let score = null;
+
+
+6. Object
+let person = {
+  firstName: "Ayushi",
+  lastName: "Sharma",
+  age: 22
+};
+
+
+
+7. Array
+let colors = ["red", "green", "blue"];
+
+
+
+8. Function
+function greet() {
+  return "Hello!";
+}
+
+
+
+
+9. Example (All Together):
+
+let name = "Ayushi";            // String
+let age = 22;                   // Number
+const isStudent = true;         // Boolean
+let city;                       // Undefined
+let score = null;               // Null
+let hobbies = ["reading", "coding"];  // Array
+let person = { name: "Ayushi", age: 22 };  // Object
+
+function sayHello() {
+  console.log("Hello, World!");
+}
+
+
+
+oprators
+
+x + y = 20
+
+oprands oprators value
+x and y   + , =    20
+
+1.airthmatic oprators
++ , - , * , / , %
+
+2.assigment oprators
+= , += , -= , *= , /= , %=
+
+3.comparison oprators(conditional statement)
+< , > , <= , >= , != , == , ===
+
+4.logical oprators
+AND(&&), OR(||), Not(!)
+
+5.bitwise
+and, or, nor, xor, left shift, right shift
+
+6.ternary oprator(ternary statement(is a conditional statement))
+?
+
+7.member access oprator
+  
+
+data += 10
+data = data + 10
+
+data -= 10
+data = data - 10
+
+data *= 10
+data = data * 10
+
+data /= 10
+data = data / 10
+
+data %= 10
+data = data % 10
+10 == 10 : true
+10 == "10" : true
+10 === "10" : false
+10 === 10 : true
+
+
+let a = 10
+10 == a : true
+10 === a : true
+
+
+let data = 1000
+data != 100 : true
+let data = 100
+data != 100 : false
+
+p   q    p AND(&&) q
+t   t       t
+t   f       f
+f   t       f
+f   f       f
+
+p   q    p OR(||) q
+t   t       t
+t   f       t
+f   t       t
+f   f       f
+
+
+#output
+console.log()
+document.write() // when we want output logged in a html document 
+window.alert() //when we want output direclty from browser window 
+
+#input
+window.confirm() // will always returns a boolean
+window.prompt() // will always returns a string
+form based input

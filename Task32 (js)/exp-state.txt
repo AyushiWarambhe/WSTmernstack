@@ -1,0 +1,32 @@
+ 
+ 
+ 
+ 
+1. Expression
+An expression is a piece of code that produces a value.
+
+Can be used anywhere a value is expected (like in variables, function arguments, return statements, etc.)
+
+Examples:
+5 + 3             // Expression: 8
+"x" + "y"         // Expression:  "xy"
+10 > 2            // Expression:  true
+a = 10            // Assignment expression:  10
+Math.max(3, 5)    // Function call expression:  5
+
+
+
+
+
+
+
+2. Statement
+A statement performs an action — it doesn’t return a value by itself.
+
+Cannot be used in places where a value is expected.
+
+Examples:
+let x = 10;             // Variable declaration statement
+if (x > 5) {...}        // if statement
+for (let i = 0; i < 5; i++) {...}  // for loop statement
+function greet() {...}  // function declaration statement
