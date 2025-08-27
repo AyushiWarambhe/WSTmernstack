@@ -1,0 +1,31 @@
+Why Multithreading is not supported in javascript?
+
+1. Single-threaded Event Loop
+
+-> JavaScript was originally created for web browsers to make pages interactive.
+-> To keep things simple and safe, it uses a single-threaded execution model (one call stack, one main thread).
+-> This avoids race condition and deadlocks, which are common issues in multithreaded programming.
+
+2. Concurrency through Event Loop
+
+->Instead of multithreading, JavaScript handles tasks using an event loop with:
+->Callbacks
+->Promises / async-await
+->Task queues & microtasks
+->This allows asynchronous, non-blocking execution without needing true multithreading.
+
+3. Shared Memory Safety
+
+-> In multithreaded languages, multiple threads can access the same memory, which can cause data corruption if not synchronized.
+-> JavaScript avoids this problem by design — since only one thread runs code at a time, you don’t need locks or semaphores.
+
+4. Alternative: Web Workers
+
+-> Modern JavaScript does allow parallelism with Web Workers (in browsers) or Worker Threads (in Node.js).
+-> But workers do not share memory directly — they communicate by passing messages.
+-> This preserves safety while still allowing background computation.
+
+In short:-
+JavaScript doesn’t support multithreading natively because it was designed to be simple, safe, and
+single-threaded with asynchronous programming instead. Parallelism is possible via Web Workers / Worker Threads,
+but not traditional shared-memory multithreading.
