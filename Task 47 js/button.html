@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bdabox{
+            width: 500px;
+            height: 500px;
+            border: 2px solid black;
+            margin: 15px;
+            padding: 20px;
+            border-radius: 30px;
+            
+        }
+        .box{
+            width: 500px;
+            height: 500px;
+            background-color: red;
+            visibility: hidden;
+            transition: all 2s ease;
+            background-size: cover;
+            
+        }
+        
+        .show{
+            visibility: visible;
+            height: 100px;
+        }
+        .box *{
+            visibility: inherit;
+            transition: all 2s ease;
+        }
+    </style>
+</head>
+<body class="bdabox"> 
+    <h1>this is box</h1>
+    <button id="btn" data-target-element="#container" 
+    data-toggle-class="show" onclick="toggleClass(event)">
+    button </button>
+    <div class="box" id="container" data-add="show" ></div>
+</body>
+<script src="./button.js"></script>
+</html>

@@ -1,0 +1,29 @@
+1. Quote generator
+
+Displays a new random quote with the author.
+
+Each new quote also changes the background color dynamically.
+
+Copy & Tweet Options
+
+Copy button: Copies the quote text to clipboard.
+
+Tweet button: Opens Twitter with the selected quote ready to post.
+
+Favorites List
+
+Users can save quotes they like.
+
+A list of saved favorite quotes is shown below the main box.
+
+Dark/Light Mode
+
+Switch between light and dark themes with a mode toggle button.
+
+Quote Counter
+
+Keeps track of how many quotes the user has seen.
+
+Auto Mode
+
+Automatically shows a new quote every 10 seconds (can be toggled ON/OFF).
