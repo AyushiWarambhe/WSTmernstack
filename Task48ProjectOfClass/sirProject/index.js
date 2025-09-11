@@ -18,15 +18,6 @@ closeButton.addEventListener('click', () => {
     targetElement.classList.remove("active")
 })
 
-document.querySelector("#task-form").onsubmit = (e) => {
-  e.preventDefault();
-  tasks.push({
-    title: taskTitle.value,
-    desc: taskDesc.value
-  });
-  document.querySelector(".add-notes-pop-up").style.display = "none";
-};
-
 addNotesFormContainer.addEventListener("mouseleave", () => {
     document.getElementById("formSubmitButton").click()
 })
@@ -35,7 +26,10 @@ addNotesFormContainer.addEventListener("mouseleave", () => {
 taskForm.addEventListener('submit', (event) => {
     event.preventDefault()
     try {
-        if (!event.target["title"].value || !event.target["description"].value) {
+        if (isEdit && TaskEditIndex != null) {
+            tasks[TaskEditIndex].title = event.target["title"].value
+            tasks[TaskEditIndex].description = event.target["description"].value
+        } else (!event.target["title"].value || !event.target["description"].value) {
             throw ("empty fields !")
         }
         tasks.push({
@@ -74,8 +68,13 @@ function displayTask() {
     })
 }
 function deleteTask(deleteIndex) {
+    let confirmDelete = window.confirm(`do you really want to delete ${deleteIndex} element ?`)
+    if (confirmDelete) {
     tasks = tasks.filter((task, index) => { return index != deleteIndex })
     displayTask()
+     } else {
+        alert("delete cancelled !")
+    }
 }
 
 function editTask(editIndex) {
@@ -85,4 +84,9 @@ function editTask(editIndex) {
     console.log(tasks[editIndex].title)
     console.log(tasks[editIndex].description)
     // put selected data into input fields
+     taskForm["title"].value = tasks[editIndex].title
+    taskForm["description"].value = tasks[editIndex].description
+    // edit variable set
+    isEdit = true
+    TaskEditIndex = editIndex
 }
