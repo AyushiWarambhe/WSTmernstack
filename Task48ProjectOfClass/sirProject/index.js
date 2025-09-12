@@ -8,6 +8,12 @@ let closeButton = document.querySelector('#close-pop-up')
 
 let taskForm = document.querySelector("#task-form")
 
+let isEdit = false
+
+let TaskEditIndex = null
+
+let searchBar = document.querySelector("#search-bar-field")
+
 let addNotesFormContainer = document.querySelector(".add-notes-form")
 
 add_notes_button.addEventListener('click', (event) => {
@@ -29,7 +35,8 @@ taskForm.addEventListener('submit', (event) => {
         if (isEdit && TaskEditIndex != null) {
             tasks[TaskEditIndex].title = event.target["title"].value
             tasks[TaskEditIndex].description = event.target["description"].value
-        } else (!event.target["title"].value || !event.target["description"].value) {
+        } else {
+            if (!event.target["title"].value || !event.target["description"].value) {
             throw ("empty fields !")
         }
         tasks.push({
@@ -37,7 +44,7 @@ taskForm.addEventListener('submit', (event) => {
             description: event.target["description"].value,
             timeStamp: `T: ${new Date().toLocaleTimeString()} D: ${new Date().toLocaleDateString()}`
         })
-
+    }
         event.target["title"].value = ""
         event.target["description"].value = ""
 
@@ -50,7 +57,14 @@ taskForm.addEventListener('submit', (event) => {
     }
 })
 
-function displayTask() {
+function displayTask(arrayToBeDisplayed) {
+
+    if(arrayToBeDisplayed.length==0 ){
+        document.querySelector('#task-container-title').innerText = "No Data To Display !"
+
+    } else{
+        document.querySelector("#task-container-title").innerText = "Task Data!"
+    }
     document.querySelector('.tasks-container').innerHTML = ""
     tasks.forEach((task, index) => {
         let singleTask = document.createElement("div")
@@ -89,4 +103,21 @@ function editTask(editIndex) {
     // edit variable set
     isEdit = true
     TaskEditIndex = editIndex
+}
+
+searchBar.addEventListener("change", (event) => {
+    console.log(event.target.value)
+    let searchString = event.target.value
+
+    let filteredTasksArray = tasks.filter((task, index) => {
+        if (task.title.includes(searchString)) {
+            return task
+        }
+    })
+
+    displayTask(filteredTasksArray)
+})
+
+function SaveDataIntoLocalStorage(data) {
+    localStorage.setItem("data", data)
 }
