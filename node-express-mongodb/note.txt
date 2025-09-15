@@ -1,0 +1,54 @@
+ HTTP Methods Overview
+
+When building APIs or web servers in Node.js, HTTP methods define what action the client wants to perform on the server’s resource.
+
+1. GET
+
+* Used to retrieve data from the server.
+* Does not modify data.
+* Parameters are often sent in the URL (query string).
+* Example use: fetching a list of users, viewing a webpage.
+
+2. POST
+
+* Used to send data to the server.
+* Typically creates a new resource.
+* Data is sent in the request body.
+* Example use: submitting a form, creating a new user in a database.
+
+3. PUT
+
+* Used to update an existing resource completely.
+* Replaces the old data with the new one.
+* Example use: updating a full user profile.
+
+4. PATCH
+
+* Used for partial updates to an existing resource.
+* Only the fields sent are updated, others remain unchanged.
+* Example use: updating just a user’s email without changing other details.
+
+5. DELETE
+
+* Used to remove a resource from the server.
+* Example use: deleting a user account or removing a record.
+
+6. HEAD
+
+* Same as GET but only returns the headers, not the body.
+* Useful for checking if a resource exists.
+
+7. OPTIONS
+
+* Used to discover available HTTP methods for a resource.
+* Helpful in CORS (Cross-Origin Resource Sharing).
+
+8. TRACE (rare)
+
+* Used for debugging; shows the request path.
+* Rarely used in modern apps due to security risks.
+
+9. CONNECT (rare)
+
+* Establishes a tunnel (e.g., for SSL/HTTPS proxying).
+* Not commonly used in typical Node.js apps.
