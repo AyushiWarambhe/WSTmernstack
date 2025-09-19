@@ -1,0 +1,34 @@
+RESTful API (Representational State Transfer)
+A RESTful API is a way for two systems (like client and server) to talk to each other over the internet using rules called REST. It is mostly used in web apps to send and receive data.
+
+Key Principles
+
+Client-Server → Frontend and backend work independently.
+Stateless → Server doesn’t remember previous requests; each request must have all required details.
+Uniform Interface → Resources are accessed in a standard way using URLs and HTTP methods.
+Resource-Based → Everything is considered a "resource" (like users, products) with a unique URL.
+Representation → Data can be sent in formats like JSON (most common) or XML.
+Cacheable → Responses can be saved to speed up future requests.
+
+Common HTTP Methods
+
+GET → Fetch data (read).
+POST → Add new data.
+PUT → Update whole data.
+PATCH → Update part of data.
+DELETE → Remove data.
+
+Example:
+
+GET /users → Get all users
+GET /users/1 → Get user with ID 1
+POST /users → Add a new user
+PUT /users/1 → Update user with ID 1
+DELETE /users/1 → Delete user with ID 1
+
+Benefits
+
+Easy to understand and use
+Works on any platform or language
+Scales well for large systems
+Very popular and widely supported
