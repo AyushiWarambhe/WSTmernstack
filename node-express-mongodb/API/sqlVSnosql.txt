@@ -1,0 +1,51 @@
+SQL VS NoSQL
+
+
+
+
+//SQL (Relational Databases)
+
+Examples: MySQL, PostgreSQL, Oracle, SQL Server
+
+Data Model: Table-based (rows & columns)
+
+Schema: Fixed and predefined (rigid structure)
+
+Scalability: Vertical (increase CPU, RAM of single server)
+
+Best for: Structured data, complex queries, transactions 
+(e.g., banking, ERP systems)
+
+Query Language: Uses SQL (Structured Query Language)
+
+Relationships: Strong support with foreign keys and joins
+
+
+
+
+//NoSQL (Non-Relational Databases)
+
+Examples: MongoDB, Cassandra, CouchDB, DynamoDB
+
+Data Model: Document-based, key-value, graph, or wide-column
+
+Schema: Dynamic, flexible (can store different structures in same collection)
+
+Scalability: Horizontal (distribute data across multiple servers easily)
+
+Best for: Unstructured / semi-structured data, fast scaling, big data apps,
+ real-time apps (e.g., social media, IoT, analytics)
+
+Query Language: No standard language, depends on DB 
+(MongoDB uses methods like .find())
+
+Relationships: Limited (joins not as strong as SQL, 
+but some support embedding or referencing)
+
+
+
+
+//In one line:
+
+SQL = structured, stable, great for transactions.
+NoSQL = flexible, scalable, great for unstructured or fast-changing data.
