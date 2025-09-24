@@ -1,0 +1,13 @@
+first downlaod mongodb MSI / mongosh MSI 
+
+open command prompt(cmd)
+then type mongosh
+=> mongosh
+=> use database_name
+=> show dbs 
+=> db.createCollection("datas") //s is imp to mention at last
+=> db.datas.insertOne ({})
+=> db.datas.insertMany([{}])
+=> db.datas.find({})
+
+
