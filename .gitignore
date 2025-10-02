@@ -6,3 +6,9 @@
 /node-express-mongodb/API/serverfiles/node_modules
 /node-express-mongodb/API/serverfiles/package-lock.json
 /node-express-mongodb/API/serverfiles/config.env
+
+
+/node-express-mongodb/MongoDB-crud/node_modules
+/node-express-mongodb/MongoDB-crud/package-lock.json
+/node-express-mongodb/MongoDB-crud/config.env
+/node-express-mongodb/MongoDB-crud/package.json
