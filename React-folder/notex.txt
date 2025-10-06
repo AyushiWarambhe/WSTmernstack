@@ -1,0 +1,61 @@
+What is React?
+React is a JavaScript library created by Facebook.
+React is a User Interface (UI) library.
+React is a tool for building UI components.
+
+What is JSX?
+JSX stands for JavaScript XML.
+JSX is an XML/HTML like extension to JavaScript.
+
+React Components
+React components are JavaScript functions.
+This example creates a React component named
+"Welcome":
+
+// React Summary
+
+React is a JavaScript library developed by Facebook (Meta) for building user interfaces, especially single-page applications (SPAs) where the UI updates dynamically without reloading the page.
+
+//Key Features
+
+1. Component-Based Architecture
+   The UI is divided into reusable pieces called components (for example: buttons, forms, cards).
+
+2. Virtual DOM
+   React uses a lightweight copy of the DOM to update only changed elements, making it fast and efficient.
+
+3. Declarative Syntax
+   You describe what you want the UI to look like, and React takes care of how to render it.
+
+4. JSX (JavaScript XML)
+   Combines JavaScript and HTML-like syntax, making UI code easy to write and read.
+
+5. Unidirectional Data Flow
+   Data flows in one direction (from parent to child), making apps predictable and easy to debug.
+
+6. Hooks
+   Functions like `useState`, `useEffect`, etc., allow you to manage state and side effects in functional components.
+
+// Core Concepts
+
+Components – Building blocks of UI
+Props – Used to pass data between components
+State – Manages dynamic data within a component
+Lifecycle Methods / Hooks – Handle side effects and data fetching
+Conditional Rendering** – Displays UI elements based on conditions
+
+// Advantages
+
+Fast rendering using Virtual DOM
+Reusable components improve productivity
+Easy to learn and maintain
+Large community support
+Works well with other frameworks and tools
+
+// Common Tools and Ecosystem
+
+Create React App – Quick setup tool for React projects
+React Router – For page navigation
+Redux / Context API – For state management
+Next.js – For server-side rendering (SSR)
+React Native – For mobile app development
