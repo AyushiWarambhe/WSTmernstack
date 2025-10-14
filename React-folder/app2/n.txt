@@ -1,0 +1,27 @@
+In React, Context
+
+
+It is a feature that allows data to be shared across multiple components 
+without the need to pass props manually through every
+level of the component tree. It provides a way to make certain values 
+such as user information, themes, or language preferences globally 
+available throughout the application. Normally, data is passed from 
+parent to child using props, but this becomes inefficient when many
+components require access to the same data, leading to a problem
+known as prop drilling. The React Context API solves this issue by 
+allowing global data management through 
+    
+    three main parts: `React.createContext()` 
+    to create a context, `Context.Provider`
+    to supply the data, and `useContext()`
+      or
+    `Context.Consumer`
+    to access it in child components.
+        
+        
+This helps in cleaner and more maintainable code by eliminating
+unnecessary prop passing. However, overusing context can make 
+debugging and performance optimization difficult.
+Therefore, it is best suited for sharing data that needs 
+to be accessed by many components,
+such as authentication details, themes, or application settings.

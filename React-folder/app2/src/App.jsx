@@ -1,17 +1,17 @@
 import React, { useState } from 'react'
 import LanugageGrid from './components/LanugageGrid.jsx';
 import AddLanuage from './components/AddLanuage.jsx';
-import axios from 'axios';
+import {fetchData} from '../api/test.js';
 
 import { languages } from './components/Dataset.js';
 
 const App = () => {
 
-   let [dataSetLanguages, setDataSetLanguages] = useState(languages)
+  let [dataSetLanguages, setDataSetLanguages] = useState(languages)
 
   let [responseData, setResponseData] = useState(null)
 
-  async function fetchData() {
+ {/*} async function fetchData() {
     try {
       
       let result = await axios({
@@ -26,7 +26,23 @@ const App = () => {
     } catch (err) {
       console.log("error while connecting to backend : ", err)
     }
-  }
+  }*/}
+
+   useEffect(() => {
+    // alert("page has been mounted !")
+
+    async function getTestData() {
+      try {
+        let response = await fetchData()
+        setResponseData(response.data)
+      } catch (err) {
+        console.log("error while getting data : ", err)
+      }
+    }
+
+    getTestData()
+  }, [])
+
 
   return (
     <>
